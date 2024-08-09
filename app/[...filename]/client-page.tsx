@@ -23,6 +23,7 @@ export default function ClientPage(props : ClientPageProps) {
     return (
       <div data-tina-field={tinaField(data.page, "body")}>
         <TinaMarkdown content={content} />
+        <p>Last edit:{data.page.last_edited}</p>
       </div>
     );
   }
